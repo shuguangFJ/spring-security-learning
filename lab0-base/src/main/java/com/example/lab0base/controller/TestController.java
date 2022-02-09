@@ -25,7 +25,7 @@ public class TestController {
     //@Secured({"ROLE_DBA"})
     //@PreAuthorize("hasAnyAuthority('admin1','ROLE_DBA')")
     //@PostAuthorize("hasAnyAuthority('admin1')")
-    @PostFilter("filterObject.username == 'admin1'")
+    //@PostFilter("filterObject.username == 'admin1'")
     public List<User> index(){
         System.out.println("index exec");
         List<User> users = new ArrayList<>();

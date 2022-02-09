@@ -8,7 +8,9 @@
     <form method="post" action="/user/login">
       用户名：<input name="username"/><br/>
       密码：<input type="password" name="password"/><br/>
+      <input type="checkbox" name="remember-me"/>30分钟内自动登录<br/>
       <input type="submit" />
+      <input type="hidden" name="_csrf">
     </form>
 </body>
 </html>
